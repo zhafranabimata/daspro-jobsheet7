@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-
-
 public class SiakadWhile29 {
     public static void main(String[] args) {
         int nilai, jml, i = 0;
@@ -11,7 +9,7 @@ public class SiakadWhile29 {
         jml = sc.nextInt();
 
         while (i<jml) {
-            System.out.println("Masukkan Nilai Mahasiswa ke-" + ( i + 1 ) + ": ");
+            System.out.print("Masukkan Nilai Mahasiswa ke-" + ( i + 1 ) + ": ");
             nilai = sc.nextInt();
 
             if (nilai < 0 || nilai > 100) {
@@ -20,6 +18,7 @@ public class SiakadWhile29 {
             }
             if (nilai > 80 && nilai <= 100) {
                 System.out.println("Nilai Mahasiswa ke-" + (i + 1) +"adalah A");
+                System.out.println("Bagus Pertahankan Nilainya !!!!");
             } else if (nilai > 73 && nilai <= 80) {
                 System.out.println("Nilai Mahasiswa ke-" + (i + 1) +"adalah B+");
             } else if (nilai > 65 && nilai <= 73) {
