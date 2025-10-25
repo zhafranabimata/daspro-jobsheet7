@@ -10,19 +10,18 @@ public class PenjualanTiket {
 
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("=========TRANSAKASI HARI INI==========");
+
         do { 
-            System.out.println("Masukkan Nama Pelanggan (ketik 'batal' untuk keluar): ");
+            System.out.print("Masukkan Nama Pelanggan: ");
             pelang = sc.nextLine();
-            if (pelang.equalsIgnoreCase("batal")) {
-                System.out.println("Transaksi dibatalkan.");
-                break;    
-            }
 
             System.out.print("Masukkan jumlah tiket yang dibeli: ");
             jmltiket = sc.nextInt();
 
             if (jmltiket < 0) {
                 System.out.println("Input tidak valid! Jumlah tiket tidak boleh negatif.\n");
+                sc.nextLine();
                 continue;
             }
 
@@ -37,8 +36,9 @@ public class PenjualanTiket {
             totalTiket += jmltiket;
             totalPenjualan += totalHarga;
 
+            System.out.println("===STRUK PEMBELIAN TIKET===" );
             System.out.println("Pembelian Atas Nama : " + pelang + " \nTotal Harga Untuk pembelian ini : Rp. " +totalHarga );
-            System.out.print("Apakah ada pelanggan lain? (y/n): ");
+            System.out.print("\nLanjut Transaksi berikutnya(y) atau Selesaikan Transaksi Hari ini?(n) (y/n): ");
             jawab = sc.next().charAt(0);
             sc.nextLine();
             

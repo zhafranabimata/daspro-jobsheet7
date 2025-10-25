@@ -28,6 +28,6 @@ public class KafeDoWhile29 {
             sc.nextLine();
         } while (true);
 
-        System.out.println("Semua transaksi selesai.");
+        System.out.println("Semua transaksi selesai.");   
     }
 }
