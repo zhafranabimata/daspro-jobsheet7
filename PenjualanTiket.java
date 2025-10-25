@@ -26,9 +26,9 @@ public class PenjualanTiket {
             }
 
             double diskon = 0;
-            if (jmltiket > 10) {
+            if (jmltiket >= 10) {
                 diskon = 0.15;
-            } else if (jmltiket> 4) {
+            } else if (jmltiket > 4) {
                 diskon = 0.10;
             }
 
@@ -38,6 +38,11 @@ public class PenjualanTiket {
 
             System.out.println("===STRUK PEMBELIAN TIKET===" );
             System.out.println("Pembelian Atas Nama : " + pelang + " \nTotal Harga Untuk pembelian ini : Rp. " +totalHarga );
+            if (jmltiket >= 10) {
+                System.out.println("Diskon 15%");
+            } else if (jmltiket > 4) {
+                System.out.println("Diskon 10%");
+            }
             System.out.print("\nLanjut Transaksi berikutnya(y) atau Selesaikan Transaksi Hari ini?(n) (y/n): ");
             jawab = sc.next().charAt(0);
             sc.nextLine();
