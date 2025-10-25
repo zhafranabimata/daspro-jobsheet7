@@ -5,8 +5,8 @@ public class SiakadFor29 {
         double nilai, tertinggi = 0, terendah = 100;
         Scanner sc = new Scanner(System.in);
         
-        for (int i = 1; i < 10; i++) {
-            System.out.println("Masukkan nilai mahasiswa ke-" + i + ": ");
+        for (int i = 1; i <= 10; i++) {
+            System.out.print("Masukkan nilai mahasiswa ke-" + i + ": ");
             nilai = sc.nextDouble();
             if (nilai > tertinggi) {
                 tertinggi = nilai;
